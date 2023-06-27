@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-16T08:49:18.483Z",
+    "end": "2023-06-16T08:49:41.811Z",
+    "duration": 23328,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "80d7d13d-b6ce-4283-9f77-2f8f319f5a59",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\Facebook.spec.js",
+      "file": "cypress\\mytests\\merci\\Facebook.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a892a859-12b4-4b1a-b937-a13f3909f483",
+          "title": "Test Suite of facebook framework",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case of facebook framework",
+              "fullTitle": "Test Suite of facebook framework Test case of facebook framework",
+              "timedOut": null,
+              "duration": 17935,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress\\\\mytests\\\\merci\\\\Facebook.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"\\\\Facebook.spec.js\\\\Test Suite of facebook framework -- Test case of facebook framework (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://www.facebook.com\"); // Launch website\ncy.get('a[title=\"English (UK)\"]').click(); // Change the language\ncy.contains('Create new account').click(); // Create new account\ncy.get('input[name=\"firstname\"]').type(\"Arhaan\");\ncy.get('input[name=\"lastname\"]').type(\"Bajaj\");\ncy.get('input[name=\"reg_email__\"]').type(\"arhaanbajaj@gmail.com\");\ncy.get('input[name=\"reg_email_confirmation__\"]').type(\"arhaanbajaj@gmail.com\");\ncy.get('#password_step_input').type('Arhaan@12345');\ncy.get('#day').select('11');\ncy.get('#month').select('Apr');\ncy.get('#year').select('2016');\ncy.get('input[name=\"sex\"][value=\"2\"]').check();\ncy.get('[type=\"submit\"][name=\"websubmit\"]').click();\ncy.get('[data-testid=\"royal_email\"]:visible').type(\"arhaanbajaj@gmail.com\"); // Login\ncy.get('#passContainer').type('Arhaan@12345');\ncy.get('button[name=\"login\"]').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"royal_email\"]:visible`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=\"royal_email\"]:visible`, but never found it.\n    at Context.eval (webpack:///./cypress/mytests/merci/Facebook.spec.js:24:11)",
+                "diff": null
+              },
+              "uuid": "20549e0c-8c8a-4923-bee4-32f57b41ad32",
+              "parentUUID": "a892a859-12b4-4b1a-b937-a13f3909f483",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "20549e0c-8c8a-4923-bee4-32f57b41ad32"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 17935,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

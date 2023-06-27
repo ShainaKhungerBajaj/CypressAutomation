@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-19T11:51:56.953Z",
+    "end": "2023-06-19T11:53:41.494Z",
+    "duration": 104541,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "273e6cbd-e340-4289-8907-bc0de6c0ad45",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\CypressFramework.spec.js",
+      "file": "cypress\\mytests\\merci\\CypressFramework.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a293a22-c1ce-4e1a-b9f8-263cfff2ebee",
+          "title": "Test Suite Cypress framework",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Positive Test case of Cypress Framework",
+              "fullTitle": "Test Suite Cypress framework Positive Test case of Cypress Framework",
+              "timedOut": null,
+              "duration": 77656,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressFramework.spec.js\"\n}",
+              "code": "cy.visit('https://automationexercise.com');\ncy.get(':nth-child(1) > .panel-heading > .panel-title > a > .badge > .fa').click();\ncy.contains(\"Dress\").click();\ncy.contains(\"View Product\").click();\ncy.get('button[class=\"btn btn-default cart\"]').click();\ncy.contains(\"Continue Shopping\").click();\ncy.contains('Madame').click();\ncy.get(':nth-child(6) > .product-image-wrapper > .single-products > .productinfo > img').scrollIntoView();\ncy.get(':nth-child(6) > .product-image-wrapper > .choose > .nav > li > a').click();\nconst numClicks = 3; // Number of times to click the up arrow with loop\nfor (let i = 0; i < numClicks; i++) {\n  cy.get('input[name=\"quantity\"]').click().type('{upArrow}');\n}\ncy.get('button[class=\"btn btn-default cart\"]').click();\ncy.contains(\"View Cart\").click();\ncy.contains(\"Proceed To Checkout\").click();\nconst myLink = cy.get('.modal-body > :nth-child(2) > a > u'); // a href tag code to click on login/Registration page\nmyLink.invoke('attr', 'href').then(href => {\n  cy.visit('https://automationexercise.com/login');\n});\nconst faker = __webpack_require__(/*! faker */ \"./node_modules/faker/index.js\"); // Random Email Generation\nfunction getRandomEmail() {\n  const randomEmail = faker.internet.email();\n  return randomEmail;\n}\nconst randomEmail = getRandomEmail(); // Usage\ncy.get('input[name=\"name\"]').type('Smaira');\ncy.get('input[data-qa=\"signup-email\"]').type(randomEmail);\ncy.get('button[data-qa=\"signup-button\"]').click();\ncy.get('input[value=\"Mrs\"]').check(); // Radio Button\ncy.get('#password').type('Test@123');\ncy.get('#days').select('4').should('have.value', '4'); // Drop down list\ncy.get('#months').select('February').should('have.value', '2');\ncy.get('#years').select('2005').should('have.value', '2005');\ncy.get('input[id=\"optin\"]').check(); // Checkbox\ncy.get('[data-qa=\"first_name\"]').type('Smaira');\ncy.get('[data-qa=\"last_name\"]').type('Khan');\ncy.get('[data-qa=\"address\"]').type('Down Town');\ncy.get('[data-qa=\"country\"]').select('Singapore');\ncy.get('#state').type('Asia');\ncy.get('#city').type('East Region');\ncy.get('#zipcode').type('179098');\ncy.get('#mobile_number').type('+17854626');\ncy.contains('Create Account').click();\ncy.get('[data-qa=\"continue-button\"]').click();\nconst myLink1 = cy.get('.shop-menu > .nav > :nth-child(3) > a'); // a href tag code to click on login/Registration page\nmyLink1.invoke('attr', 'href').then(href => {\n  cy.visit('https://automationexercise.com/view_cart');\n});\ncy.contains('Proceed To Checkout').click();\ncy.contains('Place Order').click();\ncy.get('input[data-qa=\"name-on-card\"]').type('Smaira'); // Payment\ncy.get('input[data-qa=\"card-number\"]').type('5458745');\ncy.get('input[data-qa=\"cvc\"]').type('544');\ncy.get('input[data-qa=\"expiry-month\"]').type('05');\ncy.get('input[data-qa=\"expiry-year\"]').type('2028');\ncy.get('[data-qa=\"pay-button\"]').click();\ncy.contains('Continue').click();",
+              "err": {},
+              "uuid": "87b13d50-ed43-4bdb-a055-02f5fabddfb3",
+              "parentUUID": "5a293a22-c1ce-4e1a-b9f8-263cfff2ebee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Negative Test case of Cypress Framework",
+              "fullTitle": "Test Suite Cypress framework Negative Test case of Cypress Framework",
+              "timedOut": null,
+              "duration": 17548,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressFramework.spec.js\"\n}",
+              "code": "cy.visit('https://automationexercise.com');\nconst myLink = cy.get('.modal-body > :nth-child(2) > a > u'); // a href tag code to click on login/Registration page\nmyLink.invoke('attr', 'href').then(href => {\n  cy.visit('https://automationexercise.com/login');\n});\ncy.xpath('//input[@data-qa=\"login-email\"]').type('bocave9429@carpetra.com');\ncy.xpath('//input[@placeholder=\"Password\"]').type('abc@1234');\ncy.xpath('//button[@data-qa=\"login-button\"]').click();",
+              "err": {},
+              "uuid": "339d68ed-3eb7-4b56-9515-c72ccbed93cf",
+              "parentUUID": "5a293a22-c1ce-4e1a-b9f8-263cfff2ebee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "87b13d50-ed43-4bdb-a055-02f5fabddfb3",
+            "339d68ed-3eb7-4b56-9515-c72ccbed93cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 95204,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

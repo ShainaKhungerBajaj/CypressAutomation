@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-16T08:29:13.199Z",
+    "end": "2023-06-16T08:29:34.537Z",
+    "duration": 21338,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59c5237f-22fb-4ed5-9d72-a90b4a69e9a2",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\PopUpTest.spec.js",
+      "file": "cypress\\mytests\\merci\\PopUpTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ecb5856-23a1-49ef-9d5d-63ea73093725",
+          "title": "Popup Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Suite",
+              "fullTitle": "Popup Test Test Suite",
+              "timedOut": null,
+              "duration": 18182,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress\\\\mytests\\\\merci\\\\PopUpTest.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"\\\\PopUpTest.spec.js\\\\Popup Test -- Test Suite (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "// Popup / Alerts\ncy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.get('#alertbtn').click(); // alert popup and automatically it select ok\ncy.get('[value=\"Confirm\"]').click(); // confirm popup and automatically it select ok\n//window:alert                          // confirm whether it is opening the popup and select ok\ncy.on('window:alert', str => {\n  // Mocha   \n  expect(str).to.equal('Hello , share this practice page and share your knowledge'); // alert pop up\n});\n//window:confirm\ncy.on('window:confirm', str => {\n  // Mocha   \n  expect(str).to.equal('Hello , Are you sure you want to confirm?'); // confirm pop up\n});\ncy.get('#opentab').invoke('removeAttr', 'target').click(); // child tab that open in same window\ncy.url().should('include', 'rahulshettyacademy');\ncy.go('back');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '' to include 'rahulshettyacademy'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '' to include 'rahulshettyacademy'\n    at Context.eval (webpack:///./cypress/mytests/merci/PopUpTest.spec.js:34:18)",
+                "diff": null
+              },
+              "uuid": "3667a86d-d2f0-47d6-90dc-659422768f88",
+              "parentUUID": "3ecb5856-23a1-49ef-9d5d-63ea73093725",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3667a86d-d2f0-47d6-90dc-659422768f88"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18182,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

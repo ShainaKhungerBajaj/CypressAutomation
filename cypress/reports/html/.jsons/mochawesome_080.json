@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-19T09:40:48.635Z",
+    "end": "2023-06-19T09:40:55.126Z",
+    "duration": 6491,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5534ae3c-49dd-468b-aad8-66a35b6738d6",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\MouseHover.spec.js",
+      "file": "cypress\\mytests\\merci\\MouseHover.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b0fea82-8457-4103-85c7-da8efbb9d192",
+          "title": "MouseHover Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Suite",
+              "fullTitle": "MouseHover Test Test Suite",
+              "timedOut": null,
+              "duration": 4731,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\MouseHover.spec.js\"\n}",
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\n// cy.get('.mouse-hover-content').invoke('show')       // mousehover with jquery (invoke)\ncy.contains('Top').click({\n  force: true\n}); // forcefully click on hidden element {force:true}\ncy.url().should('include', 'top');",
+              "err": {},
+              "uuid": "93f6177c-2790-427c-9221-1dd5f11cb7b0",
+              "parentUUID": "4b0fea82-8457-4103-85c7-da8efbb9d192",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93f6177c-2790-427c-9221-1dd5f11cb7b0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4731,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

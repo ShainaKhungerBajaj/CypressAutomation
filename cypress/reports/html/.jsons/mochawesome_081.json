@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-19T09:40:59.090Z",
+    "end": "2023-06-19T09:41:02.107Z",
+    "duration": 3017,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d89868a7-dd9b-459e-8b7f-eb6ca204bedd",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\PopUpTest.spec.js",
+      "file": "cypress\\mytests\\merci\\PopUpTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "961dfe50-8017-443f-af2f-753eb3556b84",
+          "title": "Popup Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Suite",
+              "fullTitle": "Popup Test Test Suite",
+              "timedOut": null,
+              "duration": 952,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress\\\\mytests\\\\merci\\\\PopUpTest.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"\\\\PopUpTest.spec.js\\\\Popup Test -- Test Suite (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "// Popup / Alerts\ncy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.get('#alertbtn').click(); // alert popup and automatically it select ok\ncy.get('[value=\"Confirm\"]').click(); // confirm popup and automatically it select ok\n//window:alert                          // confirm whether it is opening the popup and select ok\ncy.on('window:alert', str => {\n  // Mocha   \n  expect(str).to.equal('Hello , share this practice page and share your knowledge'); // alert pop up\n});\n//window:confirm\ncy.on('window:confirm', str => {\n  // Mocha   \n  expect(str).to.equal('Hello , Are you sure you want to confirm?'); // confirm pop up\n});\ncy.get('#opentab').invoke('removeAttr', 'target').click(); // child tab that open in same window\ncy.url().should('include', 'rahulshettyacademy');\ncy.go('back');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "diff": null
+              },
+              "uuid": "8a9210dd-02bd-4d8c-b4a1-1dc02ebdddda",
+              "parentUUID": "961dfe50-8017-443f-af2f-753eb3556b84",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8a9210dd-02bd-4d8c-b4a1-1dc02ebdddda"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 952,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
