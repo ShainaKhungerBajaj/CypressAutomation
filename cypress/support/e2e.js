@@ -22,3 +22,4 @@ import './commands'
 require('@cypress/xpath');                               // We should include this here to include xpath
 
 import 'cypress-mochawesome-reporter/register';          // for report generation
+
