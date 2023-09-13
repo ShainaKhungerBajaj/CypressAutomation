@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-13T10:19:22.654Z",
+    "end": "2023-09-13T10:19:47.911Z",
+    "duration": 25257,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53969b02-b79f-4b0f-853b-14e6ea1a9583",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\CypressHomePage.cy.js",
+      "file": "cypress\\mytests\\merci\\CypressHomePage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "64157f27-fc08-4497-9b1a-bfb0dcb4c312",
+          "title": "Test Suite of Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test cases of Home Page",
+              "fullTitle": "Test Suite of Home Page Test cases of Home Page",
+              "timedOut": null,
+              "duration": 20792,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressHomePage.cy.js\"\n}",
+              "code": "cy.visit('https://automationexercise.com');\nconst Hp = new _HomePage.default();\nHp.ExpandWomenIcon();\nHp.DressIcon();\nHp.ViewProdIcon();\nHp.SleevelessDress();\nHp.ContinueShopping();\nHp.Madame();\nHp.EnlargeProductImage();\nHp.IncreaseQuantity();\nHp.PinkRoseMadame();\nHp.ViewCart();\nHp.ProceedToCheckout();",
+              "err": {},
+              "uuid": "9b9a4830-f6a0-46ed-92a4-4bc99d76bec9",
+              "parentUUID": "64157f27-fc08-4497-9b1a-bfb0dcb4c312",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9b9a4830-f6a0-46ed-92a4-4bc99d76bec9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome.html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

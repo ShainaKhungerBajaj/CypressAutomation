@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-01T14:11:43.441Z",
+    "end": "2023-09-01T14:11:50.690Z",
+    "duration": 7249,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "49f0750d-4006-4922-a6fd-1615c86d1e59",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\CypressLogin.cy.js",
+      "file": "cypress\\mytests\\merci\\CypressLogin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c365324-b88f-4fbb-867f-7470917f0113",
+          "title": "Test Suite of Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case of Login",
+              "fullTitle": "Test Suite of Login Test case of Login",
+              "timedOut": null,
+              "duration": 3618,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressLogin.cy.js\"\n}",
+              "code": "cy.visit('https://automationexercise.com/login');\nlet lp = new _LoginPage.default();\n//lp.linkLogin();\nlp.EmailAddress();\nlp.LoginPassword();\nlp.LoginButton();",
+              "err": {},
+              "uuid": "59f20ce0-2afe-4958-b1c4-5b384c497ad9",
+              "parentUUID": "0c365324-b88f-4fbb-867f-7470917f0113",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "59f20ce0-2afe-4958-b1c4-5b384c497ad9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3618,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome.html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

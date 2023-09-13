@@ -4,14 +4,13 @@
   "description": "This is related to cypress",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
+    "test": "cypress run",
     "headlessChromeTest": "npm run test -- --headless --browser chrome --spec cypress/mytests/merci/*.js",
     "chromeTest": "npm run test -- --headed --browser chrome --spec cypress/mytests/merci/*.js",
     "cypressAutomationTest": "npm run test -- --spec cypress/mytests/merci/CypressFramework.spec.js",
     "cypressAutomationHeadedTest": "npm run test -- --headed --browser chrome --spec cypress/mytests/merci/CypressFramework.spec.js",
     "reportDashBoardTest": "npm run test -- --headed --browser chrome --record --key 84b34ddb-6f13-4a1b-9448-177f75e23098 --reporter mochawesome --spec cypress/mytests/merci/*.js",
     "cypressAutomationReportTest": "npm run test -- --headed --browser chrome --record --key 84b34ddb-6f13-4a1b-9448-177f75e23098 --reporter mochawesome --spec cypress/mytests/merci/CypressFramework.spec.js"
-    
   },
   "author": "Shaina khunger",
   "license": "ISC",
@@ -22,8 +21,9 @@
     "@cypress/xpath": "^2.0.3",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
-    "cypress": "^12.16.0",
+    "cypress": "^12.17.4",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.4.0",
     "cypress-sql-server": "^1.0.0",
@@ -79,7 +79,6 @@
     "core-util-is": "^1.0.2",
     "cross-spawn": "^7.0.3",
     "cypress-downloadfile": "^1.2.3",
-    "cypress-file-upload": "^5.0.8",
     "dashdash": "^1.14.1",
     "dayjs": "^1.11.7",
     "debug": "^4.3.4",
@@ -147,6 +146,7 @@
     "mimic-fn": "^2.1.0",
     "minimatch": "^3.1.2",
     "minimist": "^1.2.7",
+    "mocha": "^10.2.0",
     "ms": "^2.1.2",
     "npm-run-path": "^4.0.1",
     "object-inspect": "^1.12.3",
@@ -203,5 +203,13 @@
     "xlsx-populate": "^1.21.0",
     "yallist": "^4.0.0",
     "yauzl": "^2.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShainaKhungerBajaj/CypressAutomation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShainaKhungerBajaj/CypressAutomation/issues"
+  },
+  "homepage": "https://github.com/ShainaKhungerBajaj/CypressAutomation#readme"
 }

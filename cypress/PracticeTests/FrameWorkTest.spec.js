@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import HomePage from "../PageObjects/HomePage.cy"
+import HomePage from "../PageObjects/HomePageRahulacdmy.cy"
 import ProductPage from "../PageObjects/ProductPage.cy"
 
 describe('My Framework Test', function()

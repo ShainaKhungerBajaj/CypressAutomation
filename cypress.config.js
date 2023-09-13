@@ -1,10 +1,20 @@
 const { defineConfig } = require("cypress");
+const Mochawesome = require("mochawesome");
 
 
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter', // for HTML reports
-  projectId: "spy5j8",
+  projectId: "9ygkpq",
+  reporterOptions: {
+    reportDir: "mochawesome.html",
+    overwrite: "true",
+    html: "true",
+    json: "true",
+   timestamp: "mmddyyyy_HHMMss"
+  },
 
+
+ 
   e2e: {
     
     setupNodeEvents(on, config) {
@@ -20,10 +30,20 @@ module.exports = defineConfig({
       });
    },
 
-   //"pageLoadTimeout": 100000,
+   "pageLoadTimeout": 9000000,
 
-    specPattern: 'cypress/mytests/merci/*.js',
+   
+   
+   specPattern: 'cypress/mytests/merci/*.js',
+   //specPattern: "**/PageObjectModel/**/*.@(js|json)"
+  
+
+      
+    
+    
     //require('cypress-mochawesome-reporter/plugin')(on)  // for HTML reports
   },
+
+  
 
 });

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-17T14:25:17.262Z",
+    "end": "2023-08-17T14:25:40.337Z",
+    "duration": 23075,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b7d0271b-d2bb-446c-98ef-192650e8c255",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\CypressHomePage.spec.js",
+      "file": "cypress\\mytests\\merci\\CypressHomePage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8225ef3c-e74f-4bf7-ad27-2f79af4ac7dc",
+          "title": "Test Suite of Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test cases of Home Page",
+              "fullTitle": "Test Suite of Home Page Test cases of Home Page",
+              "timedOut": null,
+              "duration": 19934,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressHomePage.spec.js\"\n}",
+              "code": "cy.visit('https://automationexercise.com');\nlet hp = new _HomePage.default();\nhp.ExpandWomenIcon();\nhp.DressIcon();\nhp.ViewProduct();\nhp.SleevelessDress();\nhp.ContinueShopping();\nhp.Madame();\nhp.EnlargeProductImage();\nhp.IncreaseQuantity();\nhp.PinkRoseMadame();\nhp.ViewCart();\nhp.ProceedToCheckout();",
+              "err": {},
+              "uuid": "51ac697d-4bfc-40aa-ad62-e68204c8c9ac",
+              "parentUUID": "8225ef3c-e74f-4bf7-ad27-2f79af4ac7dc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51ac697d-4bfc-40aa-ad62-e68204c8c9ac"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19934,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome.html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

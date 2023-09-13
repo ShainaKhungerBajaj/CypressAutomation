@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-01T14:12:00.567Z",
+    "end": "2023-09-01T14:12:38.780Z",
+    "duration": 38213,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c633c51-db2b-4241-b753-4840e384c279",
+      "title": "",
+      "fullFile": "cypress\\mytests\\merci\\CypressPlacingOrder.cy.js",
+      "file": "cypress\\mytests\\merci\\CypressPlacingOrder.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46164a51-0ef5-4d9a-92ed-a700e624b74c",
+          "title": "Test Suite of Placing Order",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test cases of Placing Order",
+              "fullTitle": "Test Suite of Placing Order Test cases of Placing Order",
+              "timedOut": null,
+              "duration": 35283,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress\\\\mytests\\\\merci\\\\CypressPlacingOrder.cy.js\"\n}",
+              "code": "cy.visit(\"https://automationexercise.com\");\nlet orderplace = new _PlacingOrder.default();\nlet hp = new _HomePage.default();\norderplace.AddSleevelessDress();\nhp.ViewCart();\norderplace.ViewCart();\norderplace.ProceedToCheckout();\norderplace.LoginLink();\norderplace.Email();\norderplace.Password();\norderplace.Login();\norderplace.CartLink();\norderplace.ProceedToCheckout();\norderplace.PlaceOrder();\norderplace.NameOnCard();\norderplace.CardNumber();\norderplace.CVC();\norderplace.ExpiryMonth();\norderplace.ExpiryYear();\norderplace.PayButton();\norderplace.Continue();",
+              "err": {},
+              "uuid": "9060b0e9-5783-4655-8952-842e3f1bb460",
+              "parentUUID": "46164a51-0ef5-4d9a-92ed-a700e624b74c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9060b0e9-5783-4655-8952-842e3f1bb460"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome.html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
